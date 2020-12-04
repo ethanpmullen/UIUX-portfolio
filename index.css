@@ -1,1 +1,64 @@
 /* Put your style information here! */
+.main {
+  max-width: 650px;
+  margin: auto;
+  padding: 10px;
+}
+
+h2 {
+  margin-top: 1.5rem;
+}
+
+h3 {
+  font-size: 18pt;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 60px 20px;
+}
+.name {
+  font-size: 40pt;
+  font-weight: 800;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container {
+  background-color: #ecececec;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.container:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.03);
+  color: #0d6efd;
+}
+
+a.card {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  border: none;
+  padding: 10px;
+}

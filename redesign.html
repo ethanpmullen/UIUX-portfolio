@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Library Responsive Redesign</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="index.css" />
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body>
+    <main role="main" class="main">
+      <h1>Library Responsive Redesign</h1>
+      <h2>Objective</h2>
+      <p>
+        Analyze one page of a website based on usability and accessibility.
+        Then, draft and build and improved version.
+      </p>
+
+      <h2>The Website</h2>
+      <p>
+        <a href="http://www.afpls.org/">Fulton County Library System</a> is the
+        central hub for 34 libraries in Fulton County and Atlanta, Georgia.
+      </p>
+      <img class="img-fluid" src="images/afpls.png" alt="original website" />
+
+      <h2>Analysis</h2>
+
+      <dt>Goal of website</dt>
+      <dd>Easy access to many resources from the home page.</dd>
+
+      <h3>Usability Problems</h3>
+
+      <dd>
+        The page is cluttered with information
+        <ul>
+          <li>Too many pictures</li>
+          <li>Color palette isn't coordinated</li>
+          <li>
+            Lack of contrast (both the white and black text on light green
+            background are hard to read)
+          </li>
+          <li>Headers don’t stand out against pictures (databases, etc.)</li>
+          <li>Column sizes and spacing are inconsistent</li>
+          <li>Use of pictures of text instead of text (on the left column)</li>
+        </ul>
+      </dd>
+      <dt>Learnability</dt>
+      <dd>
+        Similar action items are not grouped together
+        <ul>
+          <li>
+            For example locations, event calendar, services, and about are all
+            navigation bar menu options, news is a box on the homepage
+          </li>
+          <li>
+            Within "books and materials", my account and catalog search are
+            grouped together
+          </li>
+        </ul>
+      </dd>
+      <dt>Memorability</dt>
+      <dd>
+        Navigation is not cohesive
+        <ul>
+          <li>
+            It's hard to remember where other pages are located because they're
+            so sporadic (in sidebars, nav bars, linked, etc.)
+          </li>
+          <li>
+            Uses drop down menu on top right for "I want to..." instead of
+            intuitive design
+          </li>
+        </ul>
+      </dd>
+
+      <dt>Efficiency</dt>
+      <dd>
+        Heavily used actions are not emphasized
+        <ul>
+          <li>Coronavirus updates are at the bottom</li>
+          <li>Account info is in a menu item and not at the top as expected</li>
+          <li>Search is in the middle of the page, should be at the top</li>
+        </ul>
+      </dd>
+
+      <h3>Accessibility Concerns</h3>
+      <dd>
+        The Fulton County Library System website has multiple accessibility
+        errors and alerts according to WebAIM WAVE. There are a few instances of
+        text with very low contrast, which I noticed but was interested that it
+        was quantifiably hard to read. Some of the errors were instances of bad
+        practice I didn’t notice because I don’t use a screen reader, for
+        example: layout table, redundant title text, and redundant links, et
+        cetera. In general, the clutter of the website that is apparent when
+        looking at it becomes an accessibility concern because it is hard for
+        people with different accessibility needs.
+      </dd>
+
+      <h2>Low-Fi Mockup</h2>
+      <p>
+        Layouts consolidate navigation from the original website, focusing on
+        the navigation bar at the top and removing the drop down menus and
+        sidebars. This makes the website more usable because all actions are
+        accessible from the nav bar, so the user knows where to look.
+        Additionally, other items of interest are given more emphasis on the
+        home page (for example, databse links, news, and search).
+      </p>
+      <img class="img-fluid" src="images/low-fi.png" alt="low-fi mockup" />
+
+      <h2 class="mt-2">Visual Style Guide</h2>
+      <p>
+        Color palette was taken from the Fulton County logo (blue and orange),
+        yet the orange was shifted toward yellow to be more timeless. Typography
+        was chosen to be cohesive to be lively and visually interesting yet
+        confident and sleek.
+      </p>
+      <img
+        class="img-fluid"
+        src="images/visual-style.png"
+        alt="visual style guide"
+      />
+
+      <h2>High-Fi Prototype</h2>
+      <img class="img-fluid" src="images/high-fi.png" alt="high-fi prototype" />
+
+      <h2>Implementation</h2>
+      <a href="https://ancient-headland-15502.herokuapp.com/"
+        >Redesign is deployed here</a
+      >
+      <img
+        class="img-fluid"
+        src="images/redesignscreenshot.png"
+        alt="deployment screenshot"
+      />
+      <p>
+        The validators and accessibility checkers give insight that is
+        undetectable to the eye. Even though I learned about best practices
+        earlier, using WAVE on my own submission showed me the things I forgot
+        about, such as an alt tag here and there.
+      </p>
+
+      <h2>Conclusion</h2>
+      <p class="mb-5">
+        The original library website has many important functions, all of which
+        I wanted to make accessible in the redesign, however, with a more
+        simplified design, color palette, and fewer photos. The library is not
+        trying to sell a product, but serves a more utilitarian purpose. The
+        website offers visual interest when appropriate (icons, pictures of
+        events), but mainly lets the content breathe so that a user can quickly
+        access whatever they need.
+      </p>
+    </main>
+  </body>
+</html>

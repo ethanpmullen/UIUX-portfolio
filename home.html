@@ -1,14 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html>
   <head>
-    <title>INSERT TITLE HERE!</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+
+    <link rel="stylesheet" href="index.css" />
     <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
 
   <body>
-    <!-- TODO: put your HTML code here! -->
+    <main role="main" class="main">
+      <div class="intro" data-aos="fade-down">
+        <h1 class="name">[REDACTED]*</h1>
+        <h3 class="center">
+          UX designer and software engineer at Brown University
+        </h3>
+        <p class="center">
+          *this project requires anonymity, so my name has been removed
+        </p>
+      </div>
+      <h2 class="center">Projects</h2>
+
+      <a class="card" href="./redesign.html">
+        <div class="container">
+          <h4>Fulton County Library System</h4>
+          <p>Redesign of webpage to achieve better usability</p>
+        </div>
+      </a>
+
+      <a class="card" href="https://young-waters-06770.herokuapp.com/">
+        <div class="container">
+          <h4>Together</h4>
+          <p>Video chatting app for children and grandparents</p>
+        </div>
+      </a>
+
+      <a class="card" href="./development.html">
+        <div class="container">
+          <h4>Electoral Vote Calculator</h4>
+          <p>
+            List interface that calculates electoral votes for the 2020 election
+          </p>
+        </div>
+      </a>
+
+      <a class="card" href="https://www.covidopoly.io/">
+        <div class="container">
+          <h4>Covidopoly</h4>
+          <p>Coronavirus-themed web and mobile card game</p>
+        </div>
+      </a>
+    </main>
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </html>
