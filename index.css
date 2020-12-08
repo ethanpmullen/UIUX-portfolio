@@ -1,17 +1,19 @@
 /* Put your style information here! */
 :root {
   --accent: #ff5851;
+  --background: #ecececec;
 }
 .home {
-  background-color: #ecececec;
+  background-color: var(--background);
 }
 .main {
   max-width: 650px;
   margin: auto;
   padding: 10px;
 }
-.name {
+h1 {
   color: var(--accent);
+  font-weight: 800;
 }
 h2 {
   margin-top: 1.5rem;
@@ -49,7 +51,7 @@ p {
 a {
   background-color: none;
 }
-.container {
+.project-container {
   background-color: #414141;
   color: white;
   border-radius: 10px;
@@ -60,7 +62,7 @@ a {
   padding: 30px;
 }
 
-.container:hover {
+.project-container:hover {
   transition: 0.3s ease-in-out;
   transform: scale(1.03);
   color: var(--accent);
@@ -77,15 +79,18 @@ a {
 
 nav {
   padding: 15px;
-  display: flex;
-  align-items: baseline;
-  /* background-color: var(--accent); */
-  color: var(--accent);
+  /*display: flex;
+  align-items: baseline; */
+  background-color: #414141;
+  /* color: var(--accent);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; */
 }
 
 nav ul {
   list-style-type: none;
-  margin-left: auto;
 }
 
 nav ul li {
@@ -94,9 +99,17 @@ nav ul li {
 }
 
 nav ul li a {
-  color: black;
+  color: white;
 }
 
 nav ul li a:hover {
   color: var(--accent);
+}
+
+.gohome {
+  color: white;
+}
+
+.gohome:hover {
+  color: var(--background);
 }
